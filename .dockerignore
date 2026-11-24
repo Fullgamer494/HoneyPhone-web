@@ -1,0 +1,12 @@
+node_modules
+.next
+/out
+.git
+.vercel
+coverage
+*.log
+.env
+.env.*
+!.env.example
+Dockerfile*
+README.md
