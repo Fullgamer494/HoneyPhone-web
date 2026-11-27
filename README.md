@@ -47,6 +47,8 @@ docker run --rm -p 8080:80 honeyphone-web
 
 Abre `http://localhost:8080`. El contenedor compila la app y copia la exportación estática a Nginx; no requiere un servidor Next.js en ejecución.
 
+`nginx.conf` aplica `X-Content-Type-Options`, `X-Frame-Options`, `Referrer-Policy` y `Permissions-Policy`, también a las respuestas de error. El proxy HTTPS público debe configurar HSTS. La landing no recibe contraseñas ni emite sesiones; esos controles y los límites de frecuencia de autenticación corresponden a la API.
+
 ## Configuración del contenido
 
 Edita [`src/lib/site.ts`](src/lib/site.ts) para cambiar el origen de la API, sus enlaces de documentación, la versión mostrada y la URL del APK. Son valores públicos que quedan incluidos en los archivos del sitio; no pongas secretos en el frontend.
