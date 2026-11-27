@@ -6,7 +6,7 @@
 
 <p align="center"><strong>La puerta pública al proyecto HoneyPhone.</strong><br />Landing estática con Next.js · documentación de API · descarga Android</p>
 
-![Arquitectura de HoneyPhone Web](preview.png)
+![Captura de la landing pública de HoneyPhone](preview.png)
 
 Este repositorio contiene la landing pública de HoneyPhone. Presenta el propósito y alcance del producto, resume sus funciones y enlaza a la documentación de la API y al APK Android.
 
